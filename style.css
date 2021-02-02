@@ -1,0 +1,45 @@
+body {
+  background: black;
+}
+
+.dino {
+  width: 60px;
+  height: 60px;
+  background-image: url(dino.png); /*como esta tudo na mesma pasta, apenas a url dino.png ja basta*/
+  position: absolute;
+  bottom: 0;
+}
+
+.cactus {
+  width: 60px;
+  height: 60px;
+  background-image: url(cactus.png);
+  position: absolute;
+  bottom: 0;
+}
+
+.gameover {
+  text-align: center;
+  font-family: arial;
+  margin-top: 200px;
+  background-color: white;
+}
+
+@keyframes deserto {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0;
+  }
+}
+
+.background {
+  background-image: url(background.png);
+  position: absolute;
+  bottom: 0;
+  background-repeat: repeat-x;
+  animation: deserto 600s infinite linear;
+  height: 200px;
+  width: 100%;
+}
